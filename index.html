@@ -81,6 +81,7 @@ div.tab button.active {
     
     
   <div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'Home')">Home</button>
   <button class="tablinks" onclick="openTab(event, 'AboutMe')">About Me</button>
   <button class="tablinks" onclick="openTab(event, 'Resume')">Resume</button>
   <button class="tablinks" onclick="openTab(event, 'MyProjects')">My Projects</button>
@@ -88,11 +89,20 @@ div.tab button.active {
   <button class="tablinks" onclick="openTab(event, 'ContactMe')">Contact Me</button>
 </div>
       
+     
+      
+      
+<div id="Home" class="tabcontent">
+    <h2>
+    
+          
+      
       
       
 
 <div id="AboutMe" class="tabcontent">
-  <div style="text-align: center"><img src="1seala0.github.io/rebekah's image.jpg" alt="my picture" style="width:304px;height:228px;"></div>
+    <h2>About Me</h2>
+    <div style="text-align: center"><img src="1seala0.github.io/rebekah's image.jpg" alt="my picture" style="width:304px;height:228px;"></div>
 
     <h3>Rebekah Jacobsen</h3>
 
@@ -114,7 +124,7 @@ div.tab button.active {
       
 
 <div id="Resume" class="tabcontent">
-  <h1>My Resume</h1>
+  <h2>My Resume</h2>
 </div>
 
       
@@ -122,7 +132,7 @@ div.tab button.active {
       
   
 <div id="MyProjects" class="tabcontent">
-  <h1>My Projects</h1>
+  <h2>My Projects</h2>
   <div style="text-align: center"><<img src="1seala0.github.io/super bob.JPG " alt="my project" style="width:304px;height:228px;"></div>
 
     <p>This is a side scrolling game</p>
@@ -182,17 +192,11 @@ div.tab button.active {
 
       }
 
-
-
       th  {
-
         background-color: #ece81a
+          }
 
-      }
-
-      tr:hover {background-color: #ece81a}
-
-
+          tr:hover {background-color: #ece81a}
 
       </style>
 
@@ -201,9 +205,6 @@ div.tab button.active {
      <div style ="overflow-x:auto;">
 
       <table style="width:90%; margin:1em auto">
-
-
-
 
         <tr>
 
@@ -217,9 +218,7 @@ div.tab button.active {
 
           <th>Real-Life Analogy</th>
 
-        </tr>
-
-
+          </tr>
 
         <!-- Fill in the row for Variables -->
 
@@ -253,9 +252,6 @@ div.tab button.active {
 
         </tr>
 
-
-
-
         <tr>
 
           <td><b>Conditionals</b></td>
@@ -273,8 +269,6 @@ div.tab button.active {
 
         </tr>
 
-
-
         <tr>
 
           <td><b>Functions</b></td>
@@ -283,7 +277,7 @@ div.tab button.active {
 
           <td>def functionname( parameters ):
             "function_docstring"
-            function_suite
+                function_suite
             return [expression]</td>
           <td><img src="1seala0.github.io/function in scratch.JPG " alt="function in scratch" style="width:304px;height:228px;"></td>
 
@@ -295,7 +289,21 @@ div.tab button.active {
     </div>
     
     
-    <script>
+
+  </body>
+</div> 
+  
+  
+
+
+  <div id="ContactMe" class="tabcontent">
+      <h2>Contact Me!</h2>
+</div>
+    
+    
+    
+    
+        <script>
 function openTab(evt, cityName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -309,16 +317,11 @@ function openTab(evt, cityName) {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
 }
-    </script>
-  </body>
-</div> 
-  
-  
-
-
-  <div id="ContactMe" class="tabcontent">
-      <h1>Contact Me!</h1>
-</div>
+         </script>
+    
+    
+    
+    
   
     </body>
 
