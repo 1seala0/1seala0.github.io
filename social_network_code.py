@@ -57,8 +57,14 @@ def main():
         first_choice = input("Please type 'explore' to Explore the Users or 'sign up' to Sign Up: ")
 
         if first_choice == "explore":
-            print("")
-            second_choice = input()
+            if first_choice == "explore":
+            print("What would you like to do?  You could see the names of all users, see connections between different users, or see the total number of users.")
+            second_choice = input("To see the names, type 's'.  To see the connections, type 'c'.  To see the total number, type '#'.")
+            if second_choice == "s":
+            elif second_choice == "c":
+            elif second_choice == "#":
+            else:
+                
 
         elif first_choice == "sign up":
             new_user_name = input("Please type the user name you want: ")
